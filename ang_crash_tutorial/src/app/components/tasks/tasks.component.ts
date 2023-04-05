@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Task } from 'src/app/interfaces/Task';
+import { TASKS } from 'src/app/artifacts/mock-tasks';
 
 @Component({
   selector: 'app-tasks',
@@ -7,5 +8,5 @@ import { Task } from 'src/app/interfaces/Task';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent {
-  tasks: Task[] = [];
+  tasks: Task[] = TASKS;
 }
