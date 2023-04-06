@@ -12,3 +12,5 @@
 
 # Mock server
 # https://www.npmjs.com/package/json-server
+# Run the server
+ $ npm run server

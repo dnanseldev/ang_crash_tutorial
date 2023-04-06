@@ -19,4 +19,8 @@ export class TasksComponent implements OnInit
       
         this.taskService.getTasks().subscribe ( p_tasks => this.tasks = p_tasks )
     }
+
+    deleteTasks(task: Task) {
+
+    }
 }
