@@ -1,5 +1,7 @@
-<div [ngClass]="{ reminder: task.reminder}" class="task">
-    <h3>{{ task.text }} <fa-icon (click)="fireDelete()"
+<div [ngClass]="{ reminder: task.reminder}"
+     (dblclick)="cbkToogleTask()"
+     class="task">
+    <h3>{{ task.text }} <fa-icon (click)="cbkDeleteTask()"
                                  [icon]="faTimes"
                                  [ngStyle]="{'color': 'red'}">
                         </fa-icon>

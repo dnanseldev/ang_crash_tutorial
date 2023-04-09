@@ -22,7 +22,25 @@
       "id": 4,
       "text": "Test one",
       "day": "MAy 7th at 12:30pm",
-      "reminder": false
+      "reminder": true
+    },
+    {
+      "text": "Go to Gym",
+      "day": "April 9th at 5:pm",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "Shopping",
+      "day": "April 10th at 3:00pm",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "kknkn",
+      "day": "knknknkn",
+      "reminder": true,
+      "id": 7
     }
   ]
 }

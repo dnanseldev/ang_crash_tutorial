@@ -1,4 +1,7 @@
+<app-add-task (evtEmAddTask)="addTask($event)"></app-add-task>
 <app-task-item *ngFor="let task of tasks"
                 [task]="task"
-                (evDelete)="deleteTasks(task)">  
+                (evtEmDelete)="deleteTasks(task)"
+                (evtEmToggle)="toggleReminder(task)"
+                >  
 </app-task-item>

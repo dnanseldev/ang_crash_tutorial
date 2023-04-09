@@ -10,11 +10,17 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class TaskItemComponent {
     @Input() task: Task = EmptyTask
-    @Output() evDelete: EventEmitter<Task> = new EventEmitter()
+    @Output() evtEmDelete: EventEmitter<Task> = new EventEmitter()
+    @Output() evtEmToggle: EventEmitter<Task> = new EventEmitter()
     faTimes = faTimes
 
-    fireDelete() {
+    cbkDeleteTask() {
       console.log(this.task)
-      this.evDelete.emit(this.task)
+      this.evtEmDelete.emit(this.task)
+    }
+
+    cbkToogleTask() {
+      console.log(this.task)
+      this.evtEmToggle.emit(this.task)
     }
 }

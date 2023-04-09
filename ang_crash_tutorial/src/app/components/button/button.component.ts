@@ -9,10 +9,10 @@ export class ButtonComponent
 {
   @Input() text: string = '';
   @Input() color: string = '';
-  @Output() btnClick = new EventEmitter();
+  @Output() evtEmClick = new EventEmitter();
 
 
-  Click() {
-    this.btnClick.emit();
+  cbkClick() {
+    this.evtEmClick.emit();
   }
 }
